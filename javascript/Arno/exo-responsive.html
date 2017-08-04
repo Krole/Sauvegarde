@@ -1,0 +1,224 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+         body{
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+       
+
+        ul li {
+            display: inline;
+            padding: 0 2em;
+            background-color: black;
+            border: 1px dashed black;
+            color: white;
+            transition-duration: 4s;
+            transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        ul li:hover {
+            background-color: #fff;
+            font-size: 3em;
+            transform: rotateY(360deg);
+            transition-duration: 1.0s;
+        }
+
+        #header {
+            background-color: black;
+            border: 1px dashed black;
+            font-size: 25;
+        }
+
+         #page {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            background-color: gray;
+        }
+
+
+        #container {
+            display: flex;
+            margin: auto;
+            flex-direction: row;
+            justify-content: center;
+           
+           
+        }
+
+        .encart {
+            display: flex;
+            flex-flow: column nowrap;
+            border-radius: .5em;
+            border: 1px solid transparent;
+            overflow: hidden;
+            width: 300px;
+            height: 410px;
+            margin: 5px;
+           
+            
+            
+        }
+
+        .entete {
+            flex: 0 0 auto;
+            background-color: #140f14;
+            color: hsla(34, 13%, 53%, 0.56);
+            font-size: 2em;
+        }
+
+
+        .principal {
+            flex: 1 1 auto;
+            background-color: #e2ebe2;
+          
+        }
+
+        .pied {
+            flex: 0 0 auto;
+            background-color: #7099e8;
+        }
+
+        .scroll{
+            overflow-y:scroll;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                border-bottom: 3px solid #292929;
+            }
+
+            ul {
+                flex-direction: column;
+            }
+            ul>li {
+                flex: 0 1 100%;
+            }
+
+            #container {
+                flex: 1 1 auto;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                align-items: stretch;
+                align-content: stretch;
+            }
+            .encart:first-child {
+                margin-top: 0;
+            }
+            .encart:last-child {
+                margin-bottom: 0;
+            }
+            .encart {
+                flex: 1 0 auto;
+                display: flex;
+                flex-flow: column nowrap;
+                width: auto;
+                height: auto;
+                margin: 5px 10px;
+                
+            }
+            .principal {
+                padding: .25em;
+                overflow: hidden;
+            }
+
+            img {
+                float: left;
+                width: 40px;
+                height: 55px;
+                margin: 5px;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div id="page">
+        <div id="header">
+            <ul>
+                <li>Fichier </li>
+                <li>Affichage </li>
+                <li>A propos</li>
+
+            </ul>
+        </div>
+
+
+        <div id="container">
+
+            <div class="encart">
+
+                <div class="entete">
+                    Entête
+                </div>
+
+                <div class="principal scroll">
+
+                    <p >
+                        <img style="float:right" ;="" src="./exo_flex_files/poney.jpg" title="coucou" width="50" height="50">                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolor quaerat adipisci, sed odio eaque
+                        voluptatum optio ut, fugit incidunt ratione ducimus at. Facere neque voluptates perspiciatis quo,
+                        sapiente deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolor quaerat adipisci,
+                        sed odio eaque voluptatum optio ut, fugit incidunt ratione ducimus at. Facere neque voluptates perspiciatis
+                        quo, sapiente deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolor quaerat
+                        adipisci, sed odio eaque voluptatum optio ut, fugit incidunt ratione ducimus at. Facere neque voluptates
+                        perspiciatis quo, sapiente deserunt.
+                    </p>
+                </div>
+
+                <div class="pied">Pied</div>
+            </div>
+
+
+            <div class="encart">
+                <div class="entete">Entête</div>
+                <div class="principal">
+                    <p>
+                        <img style="float:right" ;="" src="./exo_flex_files/poney.jpg" title="coucou" width="50" height="50">                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolor quaerat adipisci, sed odio eaque
+                        voluptatum optio ut, fugit incidunt ratione ducimus at. Facere neque voluptates perspiciatis quo,
+                        sapiente deserunt.
+                    </p>
+                </div>
+                <div class="pied">Pied</div>
+            </div>
+
+
+            <div class="encart">
+                <div class="entete">Entête</div>
+                <div class="principal">
+                    <p>
+                        <img style="float:right" ;="" src="./exo_flex_files/poney.jpg" title="coucou" width="50" height="50">                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolor quaerat adipisci, sed odio eaque
+                        voluptatum optio ut, fugit incidunt ratione ducimus at. Facere neque voluptates perspiciatis quo,
+                        sapiente deserunt.
+
+                    </p>
+                </div>
+                <div class="pied">Pied</div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+

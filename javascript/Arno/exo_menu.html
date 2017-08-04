@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <style>
+        li {
+            list-style-type: none;
+            position: relative;
+            width: 140px;
+            background-color: chocolate;
+        }
+
+        ul ul {
+            display: none;
+            position: absolute;
+            left: 140px;
+            top: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        li li {
+            list-style-type: none;
+            position: relative;
+            width: 140px;
+            background-color: blueviolet;
+        }
+
+        li:hover {
+            background-color: #FFFF70;
+        }
+
+        li:hover ul.niveau2,
+        li li:hover ul.niveau3 {
+            display: block
+        }
+
+        li:hover ul.niveau2,
+        li li:hover ul.niveau3 {
+            display: block
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <ul class="niveau1">
+        <li>
+            Menu
+            <ul class="niveau2">
+                <li>
+                    Extras
+                    <ul class="niveau3" >
+                        <li>Menu1</li>
+                        <li>Menu2</li>
+                    </ul>
+                </li>
+
+                <li>Entr&eacute;e
+                    <ul class="niveau3">
+                        <li>Entr&eacute;e1</li>
+                        <li>Entr&eacute;e2</li>
+                    </ul>
+                </li>
+
+                <li>Plat
+                    <ul class="niveau3">
+                        <li>Plat1</li>
+                        <li>Plat2</li>
+                        <li>Plat3</li>
+                    </ul>
+                </li>
+
+
+                <li>Dessert</li>
+                <li>Caf&eacute;</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+
+
+
+</html>

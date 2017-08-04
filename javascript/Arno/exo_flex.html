@@ -1,0 +1,153 @@
+<!-- saved from url=(0040)file:///C:/code/javascript/exo_flex.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+       
+
+        #page {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+
+        }
+
+
+        ul#menu_horizontal li {
+            display: inline;
+            padding: 0 2em;
+            background-color: black;
+            border: 1px dashed black;
+            color: white;
+        }
+
+        #header {
+            background-color: black;
+            border: 1px dashed black;
+            font-size: 25;
+        }
+
+
+        #container {
+            display: flex;
+            margin: auto;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+
+        .encart {
+            display: flex;
+            flex-flow: column nowrap;
+            border-radius: .5em;
+            border: 1px solid transparent;
+            overflow: hidden;
+            width: 25%;
+            
+        }
+
+
+
+
+        .entete {
+            flex: 0 0 auto;
+            background-color: #140f14;
+            color: hsla(34, 13%, 53%, 0.56);
+        }
+
+
+        .principal {
+            flex: 1 1 auto;
+            background-color: #e2ebe2;
+            overflow: auto;
+        }
+
+        .pied {
+            flex: 0 0 auto;
+            background-color: #7099e8;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div id="page">
+
+
+        <div id="header">
+            <ul id="menu_horizontal">
+                <li>Fichier </li>
+                <li>Affichage </li>
+                <li>A propos</li>
+
+            </ul>
+        </div>
+
+
+        <div id="container">
+
+            <div class="encart">
+
+                <div class="entete">
+                    Entête
+                </div>
+
+                <div class="principal">
+
+                    <p>
+                        <img style="float:right" ;="" src="./exo_flex_files/poney.jpg" title="coucou" width="50" height="50">                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolor quaerat adipisci, sed odio eaque
+                        voluptatum optio ut, fugit incidunt ratione ducimus at. Facere neque voluptates perspiciatis quo,
+                        sapiente deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolor quaerat adipisci,
+                        sed odio eaque voluptatum optio ut, fugit incidunt ratione ducimus at. Facere neque voluptates perspiciatis
+                        quo, sapiente deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolor quaerat
+                        adipisci, sed odio eaque voluptatum optio ut, fugit incidunt ratione ducimus at. Facere neque voluptates
+                        perspiciatis quo, sapiente deserunt.
+                    </p>
+                </div>
+
+                <div class="pied">Pied</div>
+            </div>
+
+
+            <div class="encart">
+                <div class="entete">Entête</div>
+                <div class="principal">
+                    <p>
+                        <img style="float:right" ;="" src="./exo_flex_files/poney.jpg" title="coucou" width="50" height="50">                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolor quaerat adipisci, sed odio eaque
+                        voluptatum optio ut, fugit incidunt ratione ducimus at. Facere neque voluptates perspiciatis quo,
+                        sapiente deserunt.
+                    </p>
+                </div>
+                <div class="pied">Pied</div>
+            </div>
+
+
+            <div class="encart">
+                <div class="entete">Entête</div>
+                <div class="principal">
+                    <p>
+                        <img style="float:right" ;="" src="./exo_flex_files/poney.jpg" title="coucou" width="50" height="50">                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolor quaerat adipisci, sed odio eaque
+                        voluptatum optio ut, fugit incidunt ratione ducimus at. Facere neque voluptates perspiciatis quo,
+                        sapiente deserunt.
+
+                    </p>
+                </div>
+                <div class="pied">Pied</div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
